@@ -9,6 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class AtualizacaoController {
     @GetMapping
     public String getRegistros(){
-        return "Teste";
+        return """
+                [{
+                    "nome" : "Igor",
+                    "horario" : "14:11:00",
+                    "imagem" : "-"
+                },
+                {
+                    "nome" : "Beatriz",
+                    "horario" : "15:25:14",
+                    "imagem" : "-"
+                }]
+                """;
     }
 }
